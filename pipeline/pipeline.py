@@ -5,7 +5,7 @@ day = sys.argv[1]
 
 df = pd.DataFrame({"month": [2,55], "passengers": [34,63]})
 df["day"] = sys.argv[1]
-df.to_parquet("output{day}.parquet")
+df.to_parquet(f"output{day}.parquet")
 
 print(df)
 
